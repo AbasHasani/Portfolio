@@ -46,18 +46,17 @@ onMounted(() => {
   });
 });
 </script>
-
+<!-- flex flex-col-reverse md:flex-row justify-around items-center -->
 <template>
   <section
-    class="relative min-h-screen md:mt-0 container flex flex-col-reverse md:flex-row justify-around items-center"
-    id="contact"
+    class="relative md:min-h-screen container flex flex-col-reverse md:flex-row justify-around items-center"
   >
     <div
-      class="absolute w-[60rem] h-[60rem] radial-shadow rounded-full bottom-0 left-0 z-10"
+      class="absolute md:w-[60rem] md:h-[60rem] radial-shadow rounded-full bottom-0 left-0 z-10"
     />
-    <div class="flex-1 grid place-content-center" ref="contactContainerRef">
+    <div class="flex-1 grid place-content-start md:place-content-center" ref="contactContainerRef">
       <h1
-        class="cinzel-medium text-6xl py-[3rem] text-green-200 hidden md:block"
+        class="cinzel-medium md:text-6xl py-[3rem] text-green-200 hidden md:block"
       >
         Contact
       </h1>
@@ -69,7 +68,7 @@ onMounted(() => {
             @click="copy(item.value)"
           >
             <Icon :name="item.iconName" />
-            <p>{{ item.value }}</p>
+            <p class="text-xs md:text-base">{{ item.value }}</p>
             <Icon
               class="opacity-10 group-hover:opacity-70"
               name="i-material-symbols:content-copy-outline-rounded"
@@ -80,7 +79,7 @@ onMounted(() => {
     </div>
     <div class="flex-1 grid place-content-center" ref="contactImageRef">
       <h1
-        class="cinzel-medium text-3xl text-green-200 mb-6 md:hidden text-center"
+        class="cinzel-medium text-xl md:text-3xl text-green-200 mb-6 md:hidden text-center"
       >
         Contact
       </h1>

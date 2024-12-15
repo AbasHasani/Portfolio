@@ -68,7 +68,7 @@ onMounted(() => {
       </div>
       <div
         ref="exp"
-        class="flex-1 text-green-50 border-l border-lime-100/20 pl-3"
+        class="flex-1 text-green-50 border-l border-lime-100/20 md:pl-3"
       >
         <p>
           "With a robust background in technologies such as React, Next.js, Git,

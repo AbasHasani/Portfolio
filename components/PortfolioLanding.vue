@@ -46,7 +46,7 @@ onMounted(() => {
 
 <template>
   <main
-    class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10 min-h-screen mt-10 md:mt-0"
+    class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10 md:min-h-screen mt-10 md:mt-0"
   >
     <div class="flex flex-col gap-3 flex-1">
       <h1 ref="title" class="cinzel-medium text-3xl text-green-200">
@@ -80,7 +80,7 @@ onMounted(() => {
     >
       <img
         src="~/assets/images/abas.jpg"
-        class="grayscale rounded-full group-hover:grayscale-0 transition-all duration-1000 w-[20rem] md:w-[30rem]"
+        class="grayscale rounded-full group-hover:grayscale-0 transition-all duration-1000 w-[15rem] md:w-[30rem]"
         alt=""
       />
       <div
