@@ -85,9 +85,9 @@ const projects = ref([
     techStach: [],
   },
   {
-    name: "Fotmob-Clone",
+    name: "Goalazo",
     github: "https://github.com/AbasHasani/FotmobClone",
-    url: "https://fotmob-clone.vercel.app/",
+    url: "https://goalazo.netlify.app/",
     image: "./fotmob-clone.png",
     description: "Ignore the google security error (caused by scraping)",
     techStach: ["Node js", "GraphQL"],
