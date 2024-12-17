@@ -17,12 +17,12 @@ onMounted(() => {
     y: 10,
     delay: 1,
   });
-  gsap.matchMedia().add("(min-width: 768px)", () => {
-    tl.from(firstSummary.value, {
-      opacity: 0,
-      x: -210,
-    });
+  // gsap.matchMedia().add("(min-width: 768px)", () => {
+  tl.from(firstSummary.value, {
+    opacity: 0,
+    x: -210,
   });
+  // });
   tl.from(contactLink.value, {
     opacity: 0,
     y: -20,
@@ -35,18 +35,18 @@ onMounted(() => {
     opacity: 0,
     x: 20,
   });
-  gsap.matchMedia().add("(max-width: 768px)", () => {
-    tl.from(secondSummary.value, {
-      opacity: 0,
-      x: -210,
-    });
+  // gsap.matchMedia().add("(max-width: 768px)", () => {
+  tl.from(secondSummary.value, {
+    opacity: 0,
+    x: -210,
   });
+  // });
 });
 </script>
 
 <template>
   <main
-    class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10 md:min-h-screen mt-10 md:mt-0"
+    class="container flex flex-col md:flex-row items-center justify-center gap-10 md:min-h-screen mt-10 md:mt-0"
   >
     <div class="flex flex-col gap-3 flex-1">
       <h1 ref="title" class="cinzel-medium text-3xl text-green-200">

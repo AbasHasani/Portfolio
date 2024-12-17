@@ -49,12 +49,15 @@ onMounted(() => {
 <!-- flex flex-col-reverse md:flex-row justify-around items-center -->
 <template>
   <section
-    class="relative md:min-h-screen container flex flex-col-reverse md:flex-row justify-around items-center"
+    class="max-w-screen overflow-hidden relative md:min-h-screen container flex flex-col-reverse md:flex-row justify-around items-center"
   >
     <div
       class="absolute md:w-[60rem] md:h-[60rem] radial-shadow rounded-full bottom-0 left-0 z-10"
     />
-    <div class="flex-1 grid place-content-start md:place-content-center" ref="contactContainerRef">
+    <div
+      class="flex-1 grid place-content-start md:place-content-center"
+      ref="contactContainerRef"
+    >
       <h1
         class="cinzel-medium md:text-6xl py-[3rem] text-green-200 hidden md:block"
       >
